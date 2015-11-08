@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
   before_action :set_user_item, only: [:edit, :update, :toggle]
 
   def index
-    order = params[:newest] ? {created_at: :desc} : {rank: :desc}
+  #  order = params[:newest] ? {created_at: :desc} : {rank: :desc}
     order = {rank: :desc} 
 
     @items = Item.order(order).includes(:user)
@@ -12,6 +12,7 @@ class ItemsController < ApplicationController
       object[item.id] = item.votes.map(&:user_id)
     end  
     @items = @items.group_by {|c| c.created_at.to_date() }
+    @items.keys.sort
   end
 
   def show

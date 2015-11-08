@@ -5,7 +5,7 @@
 <ul class="media-list">
 
     <% @items.each do |date, item_arr| %>
-    <span class="item_date"><%= date %> </span>
+    <span class="item_date"><%= date.strftime("%b %d") %> </span>
     <%= render item_arr %>
     <% end %>
 </ul>
