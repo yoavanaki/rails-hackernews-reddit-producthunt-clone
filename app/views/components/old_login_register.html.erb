@@ -12,7 +12,7 @@
         <span aria-hidden="true">&times;</span></button>
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
-          <h4>Check out our beautiful, elegant curation of all things maker. Lands in your inbox Sunday morning. Just grab a coffee and you're good to go. </h4>
+          <h3>The best reads for makers from around the web.</h3>
           <% @user ||= User.new %>
           <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
@@ -31,8 +31,7 @@
 
               <div class="form-group">
                 <div class="row">
-                <a href = "#" class = "newsletter_btn">Yes, please!</a>    
-                  <%#= link_to 'REGISTER', "javascript:void(0)", class: 'btn btn-theme btn-lg btn-block', data: {toggle: 'collapse', target: '#root-register'} %>
+                    <%= link_to 'Sign me up', "javascript:void(0)", class: 'btn btn-theme btn-lg btn-block', data: {toggle: 'collapse', target: '#root-register'} %>
                 </div>
 
                 <div class="collapse" id="root-register">
