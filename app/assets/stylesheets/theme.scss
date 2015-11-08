@@ -95,6 +95,18 @@ a:focus {
     height: 50px;
 }
 
+.slogan
+{
+    padding: 0; 
+	margin-bottom: 0; 
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 18px; 
+	line-height: 50px;
+	color: #262626; 
+	margin-top: 0; 
+}
+
 /*	################################################################
 	BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
@@ -407,18 +419,6 @@ csmall2 {
 
 .badge-theme {
 	background: #00b3fe;
-}
-
-.slogan
-{
-    padding: 0; 
-	margin-bottom: 0; 
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
-	font-size: 22px; 
-	line-height: 24px;
-	color: #262626; 
-	margin-top: 0; 
 }
 
 /* Contact Page */
