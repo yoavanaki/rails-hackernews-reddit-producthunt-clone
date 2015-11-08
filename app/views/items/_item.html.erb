@@ -1,13 +1,6 @@
 
 <li class="media">
-    <h1> <%=
-    currentdate = current()
-currentdate = currentade.to_date()
-if item.created_at.to_date() != currentdate
-    item.created_at.to_date()
-    currentdate = item.created_at.to_date()
-end
-%> </h1>  
+    <h3><%= Date.now() %></h3>
   <div class="media-left">
     <a href="#">
       <%= render_votes_for_item(item) %>
