@@ -2,8 +2,9 @@
 <li class="media">
     <% 
             @t = Date.current()
-            if t != item.created_at.to_date()  
-                item.created_at.to_date()
+            if t != item.created_at.to_date()  %>
+    <%= item.created_at.to_date() %>
+    <%
                 t = item.created_at.to_date()
             end
      %>
