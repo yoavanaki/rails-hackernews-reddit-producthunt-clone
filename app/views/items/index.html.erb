@@ -3,5 +3,18 @@
 <% end %>
 
 <ul class="media-list">
-  <%= render @items %>
+    
+    <% t = Date.current() %>
+    
+    <% @items.each do |item| %>
+    
+        <% if t != item.created_at.to_date()  %>
+            <%= item.created_at.to_date() %>
+            <% t = item.created_at.to_date() %>
+        <% end %>
+    
+        <%= render item %>
+    
+    <% end %>
+    
 </ul>
