@@ -2,13 +2,10 @@
 <li class="media">
 
     <% t = Date.current() %>
-    Date:
-    <%= t %>
-
-    <%# if t != item.created_at.to_date()  %>
-        <%#= item.created_at.to_date() %>
-        <%# t = item.created_at.to_date() %>
-    <%# end %>
+    <% if t != item.created_at.to_date()  %>
+        <%= item.created_at.to_date() %>
+        <% t = item.created_at.to_date() %>
+    <% end %>
   <div class="media-left">
     <a href="#">
       <%= render_votes_for_item(item) %>
