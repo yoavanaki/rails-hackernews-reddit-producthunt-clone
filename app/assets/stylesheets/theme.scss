@@ -28,7 +28,7 @@ body {
 	background: #ffffff; 
 	margin: 0; 
 	height: 100%; 
-	color: #384452;
+	color: #262626;
 	font-family: 'Source Sans Pro', sans-serif;
     line-height: 1;
 	font-weight: 400;
@@ -50,7 +50,7 @@ p {
 	font-weight: 400;
 	font-size: 14px; 
 	line-height: 24px;
-	color: #2f001d; 
+	color: #262626; 
 	margin-top: 10px; 
 }
 
@@ -73,18 +73,18 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color:#AD2959;
+  color:#F2676A;
 }
 
 ::-moz-selection  {
 	color: #fff;
 	text-shadow:none;
-	background:#2B2E31;
+	background:#F2676A;
 }
 ::selection {
 	color: #fff;
 	text-shadow:none;
-	background:#2B2E31;
+	background:#F2676A;
 }
 
 .centered {
@@ -120,11 +120,11 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: #AD2959 ;
+	color: #F2676A;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #AD2959 ;
+	color: #F2676A;
 	background-color: transparent;
 }
 
@@ -134,11 +134,11 @@ a:focus {
 }
 
 .dropdown-menu {
-	background: #384452;
+	background: #AD2959;
 }
 
 .dropdown-menu > li > a {
-	color: #903749;
+	color: #AD2959;
 	font-weight: 700;
 	font-size: 12px;
 }
@@ -148,13 +148,13 @@ a:focus {
 .btn-theme:active,
 .btn-theme.active, {
   color: #fff;
-  background-color: #384452;
-  border-color: #384452;
+  background-color: #262626;
+  border-color: #262626;
 
   &:hover {
     color: #fff;
-    background-color: #00b3fe;
-    border-color: #384452;
+    background-color: #AD2959;
+    border-color: #AD2959;
   }
 }
 
