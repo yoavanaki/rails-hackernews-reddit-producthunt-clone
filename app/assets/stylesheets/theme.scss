@@ -10,6 +10,9 @@
 ################################################################# */ 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+
 //@import url("prettyPhoto.css") screen;
 //@import url("hoverex-all.css") screen;
 
@@ -26,19 +29,19 @@ body {
 	margin: 0; 
 	height: 100%; 
 	color: #384452;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	}
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Merriweather', serif;
 	font-weight: 700;
 }
 
 p { 
 	padding: 0; 
 	margin-bottom: 12px; 
-	font-family: 'Lato', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size: 14px; 
 	line-height: 24px;
