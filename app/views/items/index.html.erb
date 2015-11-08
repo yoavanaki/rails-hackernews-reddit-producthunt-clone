@@ -3,18 +3,9 @@
 <% end %>
 
 <ul class="media-list">
-    
-    <%# t = nil %>
-    
-    <% @items.each do |key, item_arr| %>
-        <%= key %>
-        <%# if t != item.created_at.to_date()  %>
-            <%#= item.created_at.to_date() %>
-            <%# t = item.created_at.to_date() %>
-        <%# end %>
-    
-        <%= render item_arr %>
-    
+
+    <% @items.each do |date, item_arr| %>
+    <span class="item_date"><%= date %> </span>
+    <%= render item_arr %>
     <% end %>
-    
 </ul>
