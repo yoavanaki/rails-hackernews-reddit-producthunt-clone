@@ -1,7 +1,6 @@
 
 <li class="media">
-   <h1> <%= t.date "pdate" = item.created_at.to_date()
-            pdate.date %> </h1>  
+   <h1> <%= item.created_at.to_date() %> </h1>  
   <div class="media-left">
     <a href="#">
       <%= render_votes_for_item(item) %>
