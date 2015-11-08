@@ -4,7 +4,7 @@ module UserItemVotesHelper
   end
 
   def link_to_downvote(object)
-    link_to 'unlike!', vote_item_path(object), method: :delete, class: 'text-muted'
+    link_to '▽', vote_item_path(object), method: :delete, class: 'text-muted'
   end
 
   def render_votes_for_item(item=nil)
