@@ -4,16 +4,16 @@
 
 <ul class="media-list">
     
-    <% t = nil %>
+    <%# t = nil %>
     
-    <% @items.each do |item| %>
+    <% @items.each do |key, item_arr| %>
+        <%= key %>
+        <%# if t != item.created_at.to_date()  %>
+            <%#= item.created_at.to_date() %>
+            <%# t = item.created_at.to_date() %>
+        <%# end %>
     
-        <% if t != item.created_at.to_date()  %>
-            <%= item.created_at.to_date() %>
-            <% t = item.created_at.to_date() %>
-        <% end %>
-    
-        <%= render item %>
+        <%= render item_arr %>
     
     <% end %>
     
