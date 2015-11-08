@@ -1,13 +1,17 @@
 <% content_for :headerwrap do %>
   <%= render 'components/login_register' %>
 <% end %>
-<div class="row">
-    <ul class="media-list col-md-6 col-md-offset-3" >
+<div id="service">
+    <div class="col-md-6 col-md-offset-3">
+    <div class="row" style="padding: 0px 0px 15px 15px;">
+        <ul class="media-list" >
 
-        <% @items.each do |date, item_arr| %>
-        <span class="item_date"><%= date.strftime("%b %d") %> </span>
-        <%= render item_arr %>
-        <% end %>
-    </ul>
+            <% @items.each do |date, item_arr| %>
+            <span class="item_date"><%= date.strftime("%b %d") %> </span>
+            <%= render item_arr %>
+            <% end %>
+        </ul>
+    </div>
+    <span class="row">Made with ♥ by Yoav and Amitay</span>
 </div>
-<span class="row">Made with ♥ by Yoav and Amitay</span>
+</div>
