@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 li.item {
-  margin-top: 20px;
+  margin-top: 10px;
+      margin-bottom: 10px;
 
   small {
     color: #BBB;
@@ -21,16 +22,12 @@ li.item {
 
 .item_date {
     padding: 0; 
-	margin-bottom: 12px; 
+	margin-bottom: 15px; 
+    margin-top: 15px; 
 	font-family: 'Merriweather', serif;
 	font-weight: 500;
 	font-size: 18px; 
 	line-height: 24px;
 	color: #384452; 
-	margin-top: 10px; 
     text-decoration: underline;
-}
-
-.media {
-    margin-top: 20px;
 }
