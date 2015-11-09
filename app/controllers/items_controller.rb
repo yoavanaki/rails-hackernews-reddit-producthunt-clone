@@ -13,7 +13,7 @@ class ItemsController < ApplicationController
     end  
     @items = @items.group_by {|c| c.created_at.to_date() }
      # @items.order(created_at: :desc)
- #     @items.keys.sort
+      @items.keys.sort
   end
 
   def show
