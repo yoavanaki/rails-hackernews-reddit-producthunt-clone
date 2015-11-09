@@ -12,7 +12,8 @@ class ItemsController < ApplicationController
       object[item.id] = item.votes.map(&:user_id)
     end  
     @items = @items.group_by {|c| c.created_at.to_date() }
-    @items.keys.sort
+      @items.order(keys: :desc)
+ #     @items.keys.sort
   end
 
   def show
