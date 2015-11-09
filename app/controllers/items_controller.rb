@@ -6,16 +6,12 @@ class ItemsController < ApplicationController
   def index
   #  order = params[:newest] ? {created_at: :desc} : {rank: :desc}
     order = {rank: :desc} 
-
     @items = Item.order(order).includes(:user)
     @votes = @items.includes(:votes).each_with_object({}) do |item, object|
       object[item.id] = item.votes.map(&:user_id)
     end  
-      @items = @items.group_by{|c| c.created_at.to_date()}.order('date desc')
-     # @items.order(created_at: :desc)
-       # @items.keys.sort
-     # @items.sort_by { |date, item_arr| date}
-    #  @items.sort
+   # @items = @items.group_by{|c| c.created_at.to_date()}.order('date desc')
+      @items = @items.group_by{|c| c.created_at.to_date()}
   end
 
   def show
