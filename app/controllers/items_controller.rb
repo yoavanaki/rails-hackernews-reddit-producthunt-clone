@@ -14,7 +14,7 @@ class ItemsController < ApplicationController
     @items = @items.group_by {|c| c.created_at.to_date() }
      # @items.order(created_at: :desc)
        # @items.keys.sort
-    @items.sort_by { |key, value| key.to_i }
+      @items.sort_by { |key, value| key: :desc }
   end
 
   def show
