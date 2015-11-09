@@ -6,7 +6,7 @@
   "keywords": ["rails", "ruby-on-rails", "hackernews", "producthunt", "reddit"],
   "website": "http://www.blairanderson.co/rails-hackernews-reddit-producthunt-clone/",
   "env": {
-    "GOOGLE_ANALYTICS": "",
+    "GOOGLE_ANALYTICS": "UA-50963946-5",
     "SITE_TITLE": "makerloop.",
     "SEO_TITLE": "Best reads for makers from around the web"
   }
