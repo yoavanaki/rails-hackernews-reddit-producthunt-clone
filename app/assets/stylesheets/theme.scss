@@ -258,7 +258,7 @@ margin: 20px 20px 20px 20px;
 ################################################################# */
 
 #headerwrap {
-    background-image: image-url("bg.jpg");
+    background-image: url(image-path('bg.jpg'));
 	background-color: #eaeaea;
 //	min-height: 550px;
 //	padding-top: 100px;
