@@ -259,6 +259,9 @@ margin: 20px 20px 20px 20px;
 
 #headerwrap {
     background-image: url(image-path('bg.jpg'));
+     background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
 	background-color: #eaeaea;
 //	min-height: 550px;
 //	padding-top: 100px;
