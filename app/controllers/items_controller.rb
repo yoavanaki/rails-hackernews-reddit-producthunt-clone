@@ -11,10 +11,10 @@ class ItemsController < ApplicationController
     @votes = @items.includes(:votes).each_with_object({}) do |item, object|
       object[item.id] = item.votes.map(&:user_id)
     end  
-    @items = @items.group_by {|c| c.created_at.to_date() }
+      @items = @items.group_by{|c| c.created_at.to_date()}.order('date desc')
      # @items.order(created_at: :desc)
        # @items.keys.sort
-      @items.sort_by{ |date, item_arr| date}.reverse
+     # @items.sort_by { |date, item_arr| date}
     #  @items.sort
   end
 
