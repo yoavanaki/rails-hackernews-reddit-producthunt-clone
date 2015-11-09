@@ -114,11 +114,12 @@ a:focus {
   -moz-border-radius: 20;
   border-radius: 20px;
   font-family: "Source Sans Pro";
-  color: #262626;
+    font-weight: bolder;
+  color: white;
   font-size: 14px;
 margin: 20px 20px 20px 20px;
   padding: 10px 20px 10px 20px;
-  border: solid #262626 1px;
+  border: solid white 2px;
   text-decoration: none;
 }
 
@@ -258,7 +259,11 @@ margin: 20px 20px 20px 20px;
 ################################################################# */
 
 #headerwrap {
-    background-image: url(image-path('bg.jpg'));
+    background-image:     linear-gradient(
+      rgba(159, 159, 159, 0.45), 
+      rgba(159, 159, 159, 0.45)
+    ),
+    url(image-path('bg.jpg'));
      background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center; 
