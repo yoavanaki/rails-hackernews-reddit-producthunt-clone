@@ -258,7 +258,7 @@ margin: 20px 20px 20px 20px;
 ################################################################# */
 
 #headerwrap {
-    background-image: url("/assets/images/bg.jpg");
+    background-image: asset-data-url("bg.jpg");
 	background-color: #eaeaea;
 //	min-height: 550px;
 //	padding-top: 100px;
