@@ -12,8 +12,9 @@
 <span class="item_score"><%= @item.score %></span>
 <span class="item_title"> 
     <%= link_to @item.title, @item, title: @item.url %>
-    <span class="item_url">(<%= @item.url %>)</span>
-  <span><p>posted by: <%= link_to @item.user.username, @item.user %>)</p></span>
+    </br>
+    <span class="item_url"><%= @item.url %></span>
+  <span><p>Discovered by <%= link_to @item.user.username, @item.user %></p></span>
 </span>
 
 <ul>
@@ -23,12 +24,10 @@
     <%= content_tag_for(:li, comment) do %>
       <span>
           <%= link_to comment.user.username, comment.user %>
-        <%= link_to time_ago_in_words(comment.created_at), item_path(@item, anchor: "comment") %> ago.
-      </span>
+        (<%= link_to time_ago_in_words(comment.created_at), item_path(@item, anchor: "comment") %> ago)
+git      </span>
       <br/>
-      <small>
         <%= comment.content %>
-      </small>
     <% end %>
   <% end %>
     
